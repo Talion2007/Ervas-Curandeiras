@@ -10,6 +10,10 @@ body {
         font-size: 2.5em;
         margin: 1em;
     }
+    
+    p {
+        max-width: 95%;
+    }
 }
 
 main{
@@ -24,6 +28,9 @@ main{
 }
 
 article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: antiquewhite;
     border-radius: 2em;
     padding: 1.5em;
@@ -45,11 +52,18 @@ section {
     gap: 1em;
 
     img {
-        width: 15em;
-        height: 15em;
+        width: 20em;
+        height: 17.5em;
         border-radius: 2em;
         object-fit: cover;
         object-position: center;
+        transition: 5s;
+    }
+
+    img:hover{
+        width: 100%;
+        height: 40em;
+        transition: 5s;
     }
 
     div {
